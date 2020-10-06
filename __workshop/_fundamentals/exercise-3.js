@@ -18,7 +18,17 @@ const people = [
 // an argument and returns an array of their full names (each full name is a string).
 
 function fullName(peopleArr) {
-  // return something
+  let result = [];
+  peopleArr.forEach((individual) => {
+    let fullName = [];
+    fullName.push(`${individual.name.first}`);
+    if (individual.name.middle !== undefined) {
+      fullName.push(`${individual.name.middle}`);
+    }
+    fullName.push(`${individual.name.last}`);
+    result.push(fullName.join(" "));
+  });
+  return result;
 }
 
 // 2. Do a console.log to verify your function.

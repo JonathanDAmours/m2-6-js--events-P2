@@ -1,1 +1,129 @@
-/* add css here */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Jost";
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.tinput {
+  border: 1px solid rgb(179, 179, 179);
+  width: 240px;
+  margin: 0 0 10px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+
+#password input {
+  font-weight: 800;
+}
+
+#confirm input {
+  font-weight: 800;
+}
+
+.formdiv {
+  text-align: right;
+}
+
+.wrapper {
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  margin-top: 32px;
+  max-width: 475px;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+.agree {
+  margin-top: 24px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.agreecheck {
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  padding-top: 10px;
+  margin-right: 6px;
+  border: none;
+}
+
+.agreeask {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+}
+
+#clear {
+  background-color: hsl(333deg, 100%, 44%);
+  color: white;
+  height: 40px;
+  padding: 0 40px;
+  border-radius: 8px;
+}
+
+#submit {
+  background-color: hsl(256deg, 100%, 44%);
+  color: white;
+  height: 40px;
+  padding: 0 60px;
+  border-radius: 8px;
+}
+
+.errormessage {
+  background: hsla(333deg, 100%, 44%, 0.25);
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  display: none;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input.error-field {
+  border-color: hsl(333deg, 100%, 44%);
+  border-width: 3px;
+}

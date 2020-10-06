@@ -86,7 +86,13 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
+  let result = arr.filter((person) => {
+    if (key === "python" || key === "sql" || key === "javascript") {
+      return person.skillLevels[key] > val;
+    }
+    return person[key] === val;
+  });
+  return result;
 };
 
 // 2. Do a console.log to verify your function.

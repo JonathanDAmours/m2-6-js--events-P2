@@ -1,5 +1,6 @@
 # Exercise 5 - Error clean-up
 
+<!--
 Let's imagine the following scenario:
 
 1. The user enters a too-short password
@@ -10,4 +11,4 @@ We would expect that the error will "move" to the "confirm password" field, but 
 
 We need to clear all errors when the user submits the form. Write a new function, `clearErrors`, and call it when the form is submitted.
 
-If there are new errors, they will be dealt with normally. This is to ensure "stale" errors get swept away.
+If there are new errors, they will be dealt with normally. This is to ensure "stale" errors get swept away. -->

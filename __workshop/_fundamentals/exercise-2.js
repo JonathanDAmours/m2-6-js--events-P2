@@ -20,7 +20,13 @@ const people = [
 // Use Math.round()
 
 function avgAge(peopleArr) {
-  // return something
+  let getAverage = (arr) => {
+    let reducer = (total, currentValue) => total + currentValue;
+    let sum = arr.reduce(reducer);
+    return sum / arr.length;
+  };
+  let ages = people.map((person) => person.age);
+  return Math.round(getAverage(ages));
 }
 
 // 2. Do a console.log to verify your function.

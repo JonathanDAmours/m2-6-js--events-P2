@@ -4,11 +4,60 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form class="formdiv" id="form">
+        <div>
+          <label for="fullname">Full name</label>
+          <input class="tinput" id="fullname" required type="text" />
+        </div>
+        <div>
+          <label for="street">Street address</label>
+          <input class="tinput" id="street" required type="text" />
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input class="tinput" id="email" required type="email" />
+        </div>
+        <div>
+          <label for="phone">Phone number</label>
+          <input class="tinput" id="phone" required type="text" />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input class="tinput" id="password" required type="password" />
+        </div>
+        <div>
+          <label for="confirm">Confirm Password</label>
+          <input class="tinput" id="confirm" required type="password" />
+        </div>
+        <div class="agree">
+          <input
+            class="agreecheck"
+            id="agree"
+            type="checkbox"
+            required
+            value="agreementcheck"
+          />
+          <label class="agreeask" for="agreement">
+            I agree to the <a href="#">terms of service</a>.
+          </label>
+        </div>
+        <div class="errormessage" id="errormessage"></div>
+        <footer>
+          <button id="clear" type="reset">Clear</button>
+          <button id="submit" type="submit">Submit</button>
+        </footer>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
