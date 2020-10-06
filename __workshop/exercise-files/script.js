@@ -51,4 +51,4 @@ function cleanUpForm() {
   errorMessageE.style.display = "none";
 }
 
-formE.addEventListener("submit", handleSubmit);
+formE.addEventListener("submit", formSubmit);
